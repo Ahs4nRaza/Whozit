@@ -13,7 +13,7 @@
                 <% if (userEntry != '') { %>
                     <table class="table table-striped text-center my-3">
                         <thead>
-                            <tr class="table-dark">
+                            <tr class="table-dark" >
                                 <th> ID </th>
                                 <th> Image </th>
                                 <th> Name </th>
@@ -25,7 +25,7 @@
                         </thead>
                         <tbody>
                             <% userEntry.forEach( (row,index) => { %>
-                                <tr class="align-middle">
+                                <tr>
                                     <td> <%= index + 1%> </td>
                                     <td> <img src="<%= row.Image %>" width="50" height="50" class="img-thumbnail" /> </td>
                                     <td> <%= row.Name %> </td>
